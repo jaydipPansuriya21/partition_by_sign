@@ -17,4 +17,4 @@ jobs:
         with:
           ruby-version: '3.1'
       - name: Run test
-      - run: ruby test/test_partition_by_sign.rb
+        run: ruby test/test_partition_by_sign.rb
