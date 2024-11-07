@@ -4,8 +4,6 @@ require_relative '../lib/partition_by_sign'
 
 class PartitionBySignTest < Minitest::Test
   def test_partition_by_sign_with_mixed_values
-    puts "Method : "
-    puts self.methods
     input = { a: -1, b: 2, c: -3, d: 4 }
     expected_output = [[:a, :c], [:b, :d]]
     assert_equal expected_output, partition_by_sign(input)
